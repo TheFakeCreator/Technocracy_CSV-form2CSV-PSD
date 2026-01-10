@@ -46,3 +46,4 @@ desktop.ini
 # Test data (optional - uncomment if you don't want to commit test data)
 cores.csv
 exes.csv
+print/
