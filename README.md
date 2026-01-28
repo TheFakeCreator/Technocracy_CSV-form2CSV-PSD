@@ -52,39 +52,52 @@ python tshirt_converter.py
 
 #### 1. Core Team Members
 ```bash
-# With number field for printing
-python convert_cores.py cores.csv output_cores.csv
+# Interactive mode
+python convert_cores.py
 
-# Command line
+# Or with unified converter
+python tshirt_converter.py cores cores.csv output.csv
 TShirt-Converter.exe cores cores.csv output.csv
 ```
 
 #### 2. Executive Team Members  
 ```bash
-# Without number field
-python convert_exes.py exes.csv output_exes.csv
+# Interactive mode
+python convert_exes.py
 
-# Command line
+# Or with unified converter
+python tshirt_converter.py exes exes.csv output.csv
 TShirt-Converter.exe exes exes.csv output.csv
 ```
 
 #### 3. VOA (Volunteers/Public) Orders
 ```bash
-# Handles both legacy and new form formats
-python convert_voa.py VOA.csv voa_orders.csv
+# Interactive mode
+python convert_voa.py
+
+# Or with unified converter
+python tshirt_converter.py voa VOA.csv voa_orders.csv
+TShirt-Converter.exe voa VOA.csv voa_orders.csv
 ```
 
 #### 4. Size Extraction (Distribution Lists)
 ```bash
-# Extract name, domain, and size for distribution
-python extract_sizes.py cores cores.csv cores_sizes.csv
-python extract_sizes.py exes exes.csv exes_sizes.csv
+# Interactive mode
+python extract_sizes.py
+
+# Or with unified converter
+python tshirt_converter.py sizes cores cores.csv sizes.csv
+TShirt-Converter.exe sizes exes exes.csv sizes.csv
 ```
 
 #### 5. Printing Summary Generator
 ```bash
-# Generate design-wise and size-wise counts
-python generate_printing_summary.py voa_orders.csv printing_summary.csv
+# Interactive mode
+python generate_printing_summary.py
+
+# Or with unified converter
+python tshirt_converter.py summary voa_orders.csv printing_summary.csv
+TShirt-Converter.exe summary voa_orders.csv printing_summary.csv
 ```
 
 ## ✨ Features
